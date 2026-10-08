@@ -1,0 +1,15 @@
+Questa cartella deve contenere i file reali che il sito referenzia.
+Aggiungi (con questi nomi esatti, oppure aggiorna i link negli .html se ne usi altri):
+
+- cv.pdf            -> il tuo CV aggiornato (era assets/Corriculum.pdf sul sito vecchio)
+- thesis.pdf         -> il PDF della tesi (era assets/Tesi.pdf sul sito vecchio)
+- film-list.pdf       -> la tua lista film (era assets/Film.pdf sul sito vecchio)
+- photo.jpg (o .png)  -> una tua foto professionale, mezzo busto, sfondo neutro
+
+Poi in index.html sostituisci:
+  <img src="assets/avatar-placeholder.svg" ...>
+con:
+  <img src="assets/photo.jpg" alt="Portrait of Giovanni Maglio">
+
+Puoi cancellare questo file (LEGGIMI-assets.txt) e avatar-placeholder.svg
+una volta caricata la tua foto vera.

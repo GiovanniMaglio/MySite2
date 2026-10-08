@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Giovanni Maglio</title>
+<meta name="description" content="About Giovanni Maglio — physics graduate, University of Milan.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Regole dedicate per ingrandire la foto su Desktop e Mobile -->
+<style>
+  /* Layout Desktop */
+  .about-grid {
+    display: grid !important;
+    grid-template-columns: 360px 1fr !important; /* Larghezza foto su Desktop */
+    gap: 3rem !important;
+    align-items: start !important;
+    margin-top: 1rem;
+  }
+
+  .about-photo {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-photo img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 3 / 4 !important; /* Rapporto ritratto verticale */
+    object-fit: cover !important;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    display: block;
+  }
+
+  /* Layout Mobile (Smartphone) */
+  @media (max-width: 768px) {
+    .about-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.5rem !important;
+    }
+
+    .about-photo {
+      width: 100% !important;
+      max-width: 100% !important; /* Espande la foto a tutto schermo su Mobile */
+      margin: 0 auto !important;
+    }
+
+    .about-photo img {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      aspect-ratio: 4 / 5 !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-bar">
+    <a class="brand" href="index.html">Giovanni <span>Maglio</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="research.html">Research</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="notes.html">Notes</a>
+      <a href="assets/cv.pdf">CV ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-intro">
+    <div class="wrap">
+      <span class="eyebrow">About</span>
+      <h1>Giovanni Maglio</h1>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/avatar.jpg" alt="Portrait of Giovanni Maglio">
+        </div>
+        <div class="prose">
+          <p class="lede">inserire qualcosa in generale su di me</p>
+          <div style="margin-top:1.5rem; display:flex; gap:.65rem; flex-wrap:wrap;">
+            <a class="btn btn-solid" href="assets/cv.pdf">Download CV</a>
+            <a class="btn btn-ghost" href="mailto:giovanni.maglio@studenti.unimi.it">Email me</a>
+            <a class="btn btn-ghost" href="https://github.com/GiovanniMaglio">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="wrap">
+      <div class="section-head"><h2>Education</h2></div>
+      <div class="prose">
+        <div class="entry">
+          <div class="entry-meta">2022 – 2025<br>Milan, Italy</div>
+          <div>
+            <div class="entry-title">B.Sc. in Physics — University of Milan</div>
+            <p class="muted"></p>
+            <p>Thesis: <a class="link" href="research.html">Study of Drell–Yan Processes in Neutral and Charged Current with Variations of Electroweak Parameters</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="wrap">
+      <div class="section-head"><h2>Skills</h2></div>
+      <dl class="skills-grid prose">
+        <div>
+          <dt>Programming</dt>
+          <dd>Python, C/C++, Bash, LaTeX</dd>
+        </div>
+        <div>
+          <dt>Web development</dt>
+          <dd>HTML/CSS (basic)</dd>
+        </div>
+        <div>
+          <dt>Language</dt>
+          <dd>Italian, English (livello da mettere quando sono forte)</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-links">
+      <a href="mailto:giovanni.maglio@studenti.unimi.it">giovanni.maglio@studenti.unimi.it</a>
+      <a href="https://github.com/GiovanniMaglio">GitHub</a>
+    </div>
+    <div class="footer-meta">Giovanni Maglio · Milan, Italy</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
